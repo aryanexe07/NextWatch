@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NextWatch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+
+    <div class="page">
+
+      <header>
+        <div class="header-top">
+          <h1 class="logo">NextWatch</h1>
+          <div class="meta">
+            <span>Your cinema guide</span>
+            <span>Vol. 1 — 2026</span>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <span class="tagline">Personalized recommendations</span>
+        </div>
+      </header>
+
+      <main>
+
+        <section id="recommendations-section">
+          <p class="section-label">Recommended for you</p>
+          <div class="poster-grid" id="recommendations-list">
+            <div class="poster-placeholder"></div>
+            <div class="poster-placeholder"></div>
+            <div class="poster-placeholder"></div>
+            <div class="poster-placeholder"></div>
+          </div>
+        </section>
+
+        <section id="history-section">
+          <p class="section-label">Your history</p>
+          <div class="history-strip">
+            <div class="history-list" id="history-list"></div>
+            <button class="add-btn" id="add-btn">+</button>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+    <div class="modal-overlay" id="modal">
+      <div class="modal-box">
+        <button class="modal-close" id="modal-close">✕</button>
+        <p class="modal-label">Add a film to your history</p>
+        <input type="text" id="modal-input" placeholder="Search a film…" />
+        <ul class="modal-results" id="modal-results"></ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
